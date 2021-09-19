@@ -1,0 +1,17 @@
+{% extends 'Homepage.html' %}
+
+{% block title %}
+    <title>Show Fake Data</title>
+
+{% endblock %}
+
+{% block content %}
+<h1 style="text-align:center">Student Fake Data are as follows:</h1>
+<div class="container">
+    <div class="jumbotron">
+{% for i in records %}
+<p>{{i.id}}) {{i.Name}}, {{i.Percentage}}, {{i.Email}}, {{i.City}}, MobNo={{i.MobNo}}</p>
+{% endfor %}
+        </div>
+    </div>
+{% endblock %}

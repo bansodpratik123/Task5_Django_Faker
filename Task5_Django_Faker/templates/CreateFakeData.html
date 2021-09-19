@@ -1,0 +1,21 @@
+{% extends 'Homepage.html' %}
+
+{% block title %}
+    <title>Create Fake Data</title>
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <h1 style="text-align:center">Create Fake Data</h1><br><br><br><br>
+        <form method="post" class="jumbotron">
+            {% csrf_token %}
+            <label for id="no">Enter No. of records want to generate</label>
+            <input type="number" id='no' name="no"><br><br>
+
+            <button>Create Data</button>
+        </form>
+
+</div>
+
+{% endblock %}
